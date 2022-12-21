@@ -1,0 +1,23 @@
+#conda activate streamshit
+#streamlit run yolov7-tiny-demo.py --server.port 2085
+
+pycocotools
+click
+easydict
+gdown
+lap
+matplotlib
+opencv-python
+Pillow
+PyYAML
+scipy
+streamlit
+tensorboard
+--extra-index-url https://download.pytorch.org/whl/cu113
+torch
+torchaudio
+torchvision
+tqdm
+zipp
+gdown
+onnxruntime-gpu
