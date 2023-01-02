@@ -3,7 +3,7 @@
 1. Clone repo.
 
 ```
-git clone https://github.com/axcelerateai/yolov7-bytetrack-streamlit.git
+git clone https://github.com/SrPinguino1/Yolov7_Streamlit.git
 cd yolov7-bytetrack-streamlit
 ```
 
