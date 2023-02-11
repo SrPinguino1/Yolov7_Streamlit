@@ -1,0 +1,33 @@
+#sudo shutdown
+Jetson registros:
+
+Instalado Jetpack
+-Instalado Putty para correr en headless mode con la terminal de ubuntu
+-sudo apt update y sudo apt upgrade para actualizar stuff
+
+Para Actualizar a python 3.6 -- https://yunusmuhammad007.medium.com/install-python3-6-in-jetson-tk1-from-source-524256dbf36f
+-sudo apt-get update
+-sudo apt-get upgrade -y
+-sudo apt-get install build-essential
+-sudo apt-get install zlib1g-dev libsqlite3-dev tk-dev
+-sudo apt-get install libssl-dev openssl
+-sudo apt-get install libffi-dev
+no salió como esperado pero igual se va a hacer desde archiconda
+
+Instalar archiconda -- https://medium.com/@seehleung/how-to-setup-a-jetson-nano-for-ai-projects-in-2021-f8d0ac557966
+-wget https://github.com/Archiconda/build-tools/releases/download/0.2.3/Archiconda3-0.2.3-Linux-aarch64.sh
+-sudo sh Archiconda3-0.2.3-Linux-aarch64.sh
+-bash: conda: command not found
+
+Solucion a conda no encontrado
+-source ~/.bashrc
+
+Iniciar Archiconda como si fuera conda normal
+-conda activate
+
+-conda create -n streamlit python==3.6
+Usuario no tiene permiso solucion:
+-sudo chown -R username /path/to/anaconda3
+
+
+
