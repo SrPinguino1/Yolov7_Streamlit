@@ -24,10 +24,22 @@ Solucion a conda no encontrado
 
 Iniciar Archiconda como si fuera conda normal
 -conda activate
+-conda create -n streamlit python=3.10
 
--conda create -n streamlit python==3.6
 Usuario no tiene permiso solucion:
 -sudo chown -R username /path/to/anaconda3
 
+-conda activate streamlit
+-cd Yolov7_Streamlit/
+-pip install Cython numpy
+-pip install -r requirements.txt
+-conda install onnxruntime -c conda-forge
+-pip install gdown
+-python download_weights.py
+-pip install streamlit
+
+Faltaban los pesos de las escaleras en formato ONNX
+
+-streamlit run yolov7-tiny-demo.py --server.port 2085
 
 
